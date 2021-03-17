@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array: 여러 타입의 데이터를 묶어서 보관할 수 있는 객체</h1>
+
+
+    <script>
+        var a = new Array(3); 
+        a[0] = 12; 
+        a[1] = 24;
+        a[2] = 36;
+
+        document.write(a); 
+        document.write("<hr>"); 
+        document.write(a[0]);
+
+        a[3] = 55; 
+        document.write(a[3]);
+        document.write("<hr>");
+
+        var b = ["yesterday","today", "tomorrow"]; 
+        var c = ["dream", 77, "party"];
+
+        document.write(b); 
+        document.write("<hr>"); 
+        document.write(c); 
+        document.write("<hr>"); 
+        for(var i = 0; i <=a.length; i++){
+            document.write("<p>"+ a[i] * 2 +"</p>");
+        }
+        document.write("<hr>"); 
+
+        for(var i=0; i<b.length; i++){
+            if(b[i] == "today"){
+                document.write("I love you<br>");
+
+            }else{
+                document.write("I hate you!<br>");
+            }
+        }
+        document.write("<hr>");
+        //array + array => string
+        var d = b + c; 
+        document.write(d); 
+        document.write("<hr>");
+        document.write(d[0]); //문자열의 첫 번째 글자. 
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Onclick - Change Image</h1>
+
+<img src="../../images/0.jpg" alt="" name="fruit">
+<hr>
+<button onclick="changeImg(5)">파인애플</button>
+<button onclick="changeImg(6)">체리</button>
+<button onclick="changeImg(7)">수박</button>
+
+
+
+
+<script>
+    var path = "../../images/"; 
+    var extension = ".jpg";
+ function changeImg(num){
+    fruit.src = path + num + extension; 
+}
+
+</script>
+
+</body>
+</html>

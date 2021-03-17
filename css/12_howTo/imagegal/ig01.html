@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .row{
+            display: flex; flex-wrap: wrap
+        }
+        img{width: 200px;}
+        div.gal{
+            /*float: left; */
+            flex:1;
+            
+            margin: 5px; border: 1px solid #ddd
+        }
+        div.gal img{width: 100%; }
+        div.desc{padding: 15px; text-align: center}
+        div.gal:hover{border: 1px solid #777; box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2)}
+        
+        iframe{
+            width: 100%; height: 50vh; margin: 30px auto; 
+            /*display: none;*/
+        }
+    </style>
+</head>
+<body>
+    <h1>우리 반 아이들</h1>
+    <div class="row">
+        <div class="gal">
+           <a href="../../../images/2010.jpg" target="gal_home"><img src="../../../images/2010.jpg" alt="앞집 아이"></a>
+           <div class="desc">예쁜 앞집 아이</div> 
+        </div>
+        <div class="gal">
+           <a href="../../../images/2011.jpg" target="gal_home"><img src="../../../images/2011.jpg" alt="옆집 아이"></a>
+           <div class="desc">예쁜 옆집 아이</div> 
+        </div>
+        <div class="gal">
+           <a href="../../../images/2013.jpg" target="gal_home"><img src="../../../images/2013.jpg" alt="뒷집 아이"></a>
+           <div class="desc">예쁜 뒷집 아이</div> 
+        </div>
+    </div>
+     <iframe src="../../../images/docca.JPG" frameborder="0" name="gal_home" ></iframe>
+</body>
+</html>

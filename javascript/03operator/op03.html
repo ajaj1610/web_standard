@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: indianred; 
+            padding: 20px;
+            color: white; 
+        }
+    </style>
+</head>
+<body>
+
+    숫자 1: <input type="text" id="n1"><br>
+    숫자 2: <input type="text" id= "n2"><br>
+    <hr>
+    <button type="button" onclick="check()">홀짝 판정</button>
+    <hr>
+    <div>숫자 1과 숫자 2의 합은 <mark><span id="result"></span></mark>입니다.</div>
+
+
+    <script>
+
+        var n1 = document.getElementById("n1"); 
+        var n2 = document.getElementById("n2");
+        var result = document.getElementById("result"); 
+
+        function check(){
+        /*    var sum = parseInt(n1.value) + parseInt(n2.value); 
+            if(sum % 2 == 0){
+                result.innerHTML = "짝수";
+            }else{
+                result.innerHTML = "홀수";
+            }
+        } */
+
+        ///3항식 : 판별식 ?-> true 일때 :-> false일때. 
+
+        var even_dd = sum % 2 == 0? "짝수" : "홀수"; 
+        result.innerHTML = even_odd; 
+    </script>
+</body>
+</html>

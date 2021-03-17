@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h2.class {
+            background-color: tomato;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <hi>Calss &amp; ID</hi>
+    <ul>
+        <li>Class: 페이지 내에서 특정 element들을 한 번에 선택하기 위한 명칭. 띄어쓰기로 여러 개 설정 가능</li>
+        <li>ID: 페이지 내에서 유일한 특정 element를 선택하기 위한 명칭</li>
+    </ul>
+    <hr>
+    <h2 class="city">London</h2>
+    <p>Londin is the captial city of the UK.</p>
+    <h2 class="city">Paris</h2>
+    <p>Paris is the captial city of France.</p>
+    <h2 class="city">Berlin</h2>
+    <p>Berlin is the captial city of Germany</p>
+    <h2 class="city">Seoul</h2>
+    <p>Seoul is the captial city of Korea</p>
+    <h2 id="sun">Sun</h2>
+    <p> Sun is the captial city of the solar system</p>
+
+    <button type="button" onclick="erase()">night</button>
+    <button type"button" onclick="appear()">morning</button>
+    <script>
+        var x = document.getElementById("sun");
+
+        function erase() {
+            x.style.disaply = "none";
+        }
+        fuction appear() {
+            x.style.display = "block";
+        }
+
+    </script>
+</body>
+
+</html>

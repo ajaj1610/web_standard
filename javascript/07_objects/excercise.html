@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="hisCar"></h3>
+    <p id="cars"></p>
+    <script>
+        // class Man(name, age, cars) 만들고 
+        // 객체 1개 생성하여 #hisCar에 출력
+
+        function Man(name, age, cars){
+            this.name = name;
+            this.age = age;
+            this.cars = cars;
+            this.myCars = function(){
+                return this.name + " : " + this.cars;
+            }
+        } 
+    
+
+        var tom = new Man("tom", 44, ["benz", "bmw", "audi"]);
+
+        console.log(tom.myCars());
+
+        var x = tom.name + "'s Cars"
+        document.getElementById("hisCar").innerHTML = x;
+
+        var y="";
+        for(var index in tom.cars){
+            y += tom.cars[index] + "<br>";
+        }
+        document.getElementById("cars").innerHTML = y;
+
+
+        
+    </script>
+</body>
+</html>

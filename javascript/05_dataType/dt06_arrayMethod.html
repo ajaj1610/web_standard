@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var fruits = ["apple", "strawberry", "melon", "orange"];
+        
+        console.log(fruits);
+        console.log("fruits[0] =>", fruits[0]);
+        console.log(fruits.toString());
+        console.log(fruits.toString()[2]);
+
+        console.log(fruits.join(" * "));
+        console.log(fruits.join(" / ")); 
+       
+        var fruits_string = fruits.join(" / "); 
+
+        // 문자열을 특정기호(문자)를 기준으로 잘라 array로 변환. 
+        var fruits_arr = fruits_string.split(" / ");
+        console.log(fruits_arr);
+
+        //fruits에 새로운 원소 추가 
+
+        fruits[4] = "kiwi";
+        console.log(fruits);
+        //array의 length는 마지막 index + 1이다. 
+        fruits[fruits.length] = "peer";
+        console.log(fruits);
+        // 원소 삭제 
+        delete fruits[5];
+        console.log(fruits); //빈 칸 남는다. 
+        //pop(), shift()사용
+        fruits.pop(); 
+        console.log(fruits);
+        fruits.shift();
+        console.log(fruits);
+
+        //splice, splice etc
+    </script>
+</body>
+</html>

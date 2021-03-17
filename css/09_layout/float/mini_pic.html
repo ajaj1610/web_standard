@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{margin: 0}
+        .row{
+            width: 1200px; height: 640px;
+        }
+        .left{
+            background-color: burlywood; width: 640px; height: 640px; float: left
+        }
+        .right{
+            width: 550px; height: 640px; background-color: firebrick; float: right}
+        img{object-fit: none;}
+        .mini_pic{
+            width: 300px; height: 300px; overflow: hidden; object-fit: none; margin: 5px;
+            float: left
+        }
+        .big_pic{width: 500px; height: 600px; overflow: hidden; margin: 20px }
+        .news{background-color: hotpink; height: 100px; text-align: center; font-size: 30px;
+        clear: both;
+            margin-top: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="left">
+            <div class="mini_pic"><img src="../../../images/unit_Reservation.jpg" alt=""></div>
+            <div class="mini_pic"><img src="../../../images/unit_Reservation.jpg" alt=""></div>
+            <div class="mini_pic"><img src="../../../images/unit_Reservation.jpg" alt=""></div>
+            <div class="mini_pic"><img src="../../../images/unit_Reservation.jpg" alt=""></div>
+        </div>
+        <div class="right">
+            <div class="big_pic"><img src="../../../images/unit_SpecialOffer.jpg" alt=""></div>
+        </div>
+        <div class="news">오늘의 메뉴</div>
+    </div>
+    <div class="news">오늘의 메뉴</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            background-color: bisque;
+            display: flex;
+        }
+
+        p {
+            width: 100px;
+            background-color: brown;
+            color: white;
+            margin: 10px;
+            flex: 1; 
+        }
+
+        .container div {
+            background-color: cadetblue;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px; 
+            flex: 1; 
+        }
+        
+        .c1 {
+            flex-direction: row; 
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .c2 {
+            flex-direction: row-reverse;
+        }
+        .c3 {
+            flex-direction: column;
+        }
+         .c3 {
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FlexBox</h1>
+    <div class="container c1">
+        <p>direction: row</p>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+        <div class="container c2">
+        <p>direction: row</p>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+<div class="container c3">
+        <p>direction: row</p>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="container c4">
+        <p>direction: row</p>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body></html>

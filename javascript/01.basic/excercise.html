@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="myCar"></h3>
+    <p>차를 바꾸다</p>
+    <h3 id="changeCar"></h3>
+    <div id="result"></div>
+
+    <script>
+     //변수 a를 선언 
+     var a; 
+     //변수 a에 7을 넣어 초기화 
+     a = 7; 
+     //변수 b를 선언하고 9로 초기화
+     var b = 9; 
+     //변수 c를 선언하고 변수 a의 값과 변수 b의 값을 더한 값으로 초기화 
+     var c = a + b; 
+     //변수 c의 값을 c = 16 형태로 경고창에 출력
+     alert("c = " + c);
+     //변수 car에 갖고 싶은 차 이름 저장 
+     var car = "포르쉐";
+     //변수 owner에 자기 이름을 저장하시오.
+     var owner = "조아라";
+     // 콘솔 창에 tom: porche 형태로 출력
+     console.log(owner + " : " + car);
+     //id가 myCar인 element에 "tom의 차는  porche입니다."   
+     car = "bently";
+     document.getElementById("myCar").innerHTML = owner + "의 차는" + " " + car + "입니다."
+     //car의 값을 bently로 바꾸기
+     docuemnt.getElementById("changeCar").innerHTML = owener + "의 차는" + " " + car + "입니다."; 
+     //body에 h1태그로 위의 내용을 그대로 출력.
+     document.write("<h1>"+ owener + "의 차는" + " " + car + "입니다</h1>"); 
+     //prompt로 값 두개를 입력받아 합계를 result div에 출력하시오.
+
+    var num1 = prompt("숫자를 입력하세요.");
+    var num2 = prompt("숫자를 입력하세요.");
+    var sum = ParseInt(num1) + ParseInt(num2);
+        document.getElementById("result").innerHTML = sum; 
+
+    </script>
+</body>
+</html>

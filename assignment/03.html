@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .age,
+        .hobby,
+        .info,
+        table,
+        textarea {
+            background-color: #EFF5FB;
+            width: 100%;
+        }
+
+        body {
+            background: #dcdfe3;
+        }
+
+        table {
+            padding: 10px;
+        }
+
+        #tel {
+            width: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <form input="">
+            <fieldset>
+                <legend>이용자 대상 통계 설문조사</legend>
+                <hr>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="radio" id="age" name="age">10~20대<br>
+                            <input type="radio" id="age2" name="age">20~30대<br>
+                            <input type="radio" id="age3" name="age">30~40대<br>
+                            <input type="radio" id="age4" name="age">40~50대<br>
+                            <input type="radio" id="age5" name="age">50대~60대<br>
+                            <input type="radio" id="age6" name="age">기타
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <b3>취미는?</b3><br>
+                <hr>
+                <table>
+                    <tr>
+                        <td><input type="checkbox" id="reading" name="hobby">독서<br>
+                            <input type="checkbox" id="reading" name="hobby">영화 감상<br>
+                            <input type="checkbox" id="reading" name="hobby">요리<br>
+                            <input type="checkbox" id="reading" name="hobby">음악 감상<br>
+                            <input type="checkbox" id="reading" name="hobby">기타
+                        </td>
+                    </tr>
+                </table>
+                <br><br>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="gender">성별: </label><select name="gender" id="gender">
+                                <option value="">--Please select an option</option>
+                                <option value="female">여성</option>
+                                <option value="male">남성</option>
+                                <option value="other">기타</option>
+                            </select><br>
+                            <hr>
+
+                            <label for="member">회원/비회원 선택: </label><input type="radio" name="member" value="member">회원
+                            <input type="radio" name="member" value="membern">비회원<br>
+                            <hr>
+                            <label for="date">거주지: </label><select name="location" id="location">
+                                <option value="">--Please select an option</option>
+                                <option value="seoul">서울</option>
+                                <option value="loca5">수도권(인천,경기)</option>
+                                <option value="loca3">충청권</option>
+                                <option value="loca4">전라도</option>
+                                <option value="etc">기타</option>
+                            </select>
+
+                        </td>
+                    </tr>
+                </table>
+                <br>
+
+                <b3>설문참여 선물받기에 동의해 주시는 참여자께서는 연락처를 남겨 주시기 바랍니다.</b3><br>
+                <hr>
+
+                <table>
+                    <tr>
+                        <td>
+                            <label for="email">이메일 주소: </label>
+                            <input type="email" name="email" id="email"><br>
+                            <label for="tel">전화번호: </label>
+                            <input type="tel" name="tel" id="tel" maxlength="3" value="010"> - <input type="tel" name="tel2" id="tel" maxlength="3"> - <input type="tel" name="tel3" id="tel" maxlength="3"><br>
+                        </td>
+                    </tr>
+                </table>
+
+                <br>
+                <label for="op">설문조사에 관련하여 기타 의견이 있으신 경우 적어주세요.</label><br>
+                <hr>
+
+                <textarea name="op" id="op" cols="60" rows="10" maxlength="500" aligen="center"></textarea>
+                <br>
+                <br>
+                <label for="op"><strong>개인 정보 사용에 동의 하십니까?</strong></label><br><input type="checkbox" name="info" id="y">네 <input type="checkbox" name="info" id="n">아니요.
+                <br>
+                <br>
+                <input type="submit">
+
+            </fieldset>
+        </form>
+    </section>
+    <br>
+    <br>
+    <audio controls autoplay>
+        <source src="../../images/Kalimba.mp3" type="audio/mpeg">
+    </audio>
+</body></html>

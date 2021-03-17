@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>회원가입</h2>
+    <form action="">
+        <fieldset>
+            <legend>회원가입</legend>
+             <ul>
+                 <li><label for="name">Name:</label><input type="text" name="name" autofocus>
+                 <li><label for="nationality">Nationality</label><input type="text" name="nationality" value="한국"></li>
+                 <label for="id">ID:</label><input type="text" name="ID" placeholder="영어 소문자 8글자 이상" min-length="8">
+                 <li><label for="tel">TEL:</label><input type="tel" name="tel" id="tel" placeholder="000-000-000" title="전화번호는 3-4-4-4형식 이어야 합니다." pattern="\d{3}-\d{3,4}-\d{4}"></li>
+                 
+             </ul>
+        </fieldset>
+    </form>
+    <br>
+    <input type="submit">
+</body>
+</html>

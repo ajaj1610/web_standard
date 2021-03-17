@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 100px;
+            color: white;
+            background-color: teal;
+            font-size: 80px; 
+            font-family:fantasy; 
+            text-align: center;
+        }
+        select {
+            font-size: 40px; 
+            margin-bottom: 50px; 
+            padding: 10px; 
+        }
+    
+    </style>
+</head>
+<body>
+<form action="" name="frm">
+<select name="color" id="">
+ <option value="red">red</option>
+ <option value="orange">orange</option>
+<option value="yellow">yellow</option>
+<option value="green" selected>green</option>
+<option value="blue">blue</option>
+<option value="navy">navy</option>
+<option value="value">purple</option>
+</select>
+<button type="button" onlick="changeColor()">색깔 바꾸기</button>
+    </form>
+    <div id="col_name"></div>
+
+    <script>
+
+     function changeColor(){
+       /* for(let i = 0; i <=frm.color.length; i++){
+          if(frm.color[i].selected)
+            col_name.innerHTML = frm.color[i].value;
+            document.body.style.backgroundColor = frm.color[i].value; 
+          } */
+         // var select = frm.color[frm.color.selectedIndex].value; 
+         var selct = frm.color.options[frm.color.sectedIndex].text;
+          col_name.innerHTML = select; 
+          document.body.style.backgroundColor = select; 
+        }
+    </script>
+</body>
+</html>

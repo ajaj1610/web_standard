@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        ul {
+        list-style-type: none;
+        }
+        li {
+        padding: 20px;
+        background-color: pink;
+        margin-bottom: 5px; }
+
+        .skyblue {
+            background-color: skyblue;
+        }
+        #violet {
+             background-color : violet; 
+        }
+        p.skyblue {
+            padding: 20px; 
+            background-color: coral;
+        }
+        div { 
+            padding: 20px; 
+            background-color: dodgerblue; 
+        }
+        .yellow {
+            background-color: yellow; 
+        }
+        div.yellow {
+            background-color: salmon; 
+        }
+        #green {
+            background-color: goldenrod;
+        }
+        div#green {
+            background-color: gray; 
+        }
+        .sky {
+            background-color: cornflowerblue !important
+        }
+        
+        /* !important : 최상위 */ 
+    </style>
+</head>
+
+<body>
+    <h1>Select 우선 순위</h1>
+    <ul>
+        <li>element: 1 point</li>
+        <li class="skyblue">class, attribute, pseudo-class: 10 points</li>
+        <li class="skyblue" id="violet">id: 100points</li>
+        <li class="skyblue" id="violet" >inline style: 1000 points</li>
+        <li class="sky" id="violet" style="background-color: sienna">!important: The King!</li>
+    </ul>
+    <p class="skyblue">난 몇 점일까?</p>
+    <div class="yellow" id="green" style="background-color: teal">I am a green DIV</div>
+</body></html>

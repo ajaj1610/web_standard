@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="header">자바 스크립트 함수</h2>
+
+특정한 기능을 반복적으로 사용하기 위해서 /
+원하는 순간 이벤트에 따라 실행하기 위해 사용.
+일반 스크립트는 DOM로딩 순서에 따라 실행되지만 함수는 호출되는 순간 실행됨.
+
+<script>
+    window.ondblclick. = function init(){
+        for(var i = 0; i <= 10; i++){
+            hi();
+        }
+    }
+    function hi(){
+        console.log('hi!');
+    }
+
+/*window.onload = */
+
+
+window.onload = function init(){
+    document.getElementById("header").innerHTML = "tomato"; 
+}
+
+</script>
+</body>
+</html>

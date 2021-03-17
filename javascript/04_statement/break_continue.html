@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//break 
+
+for(let i=0; i<10; i++){
+
+    if(i=== 3){
+        //반복을 중단하고 빠져나감.
+    break; 
+    }
+    document.write(i + "<br>");
+}
+document.write("<hr>");
+
+var j = 0; 
+while(true){
+    j++; 
+    if(j == 100){
+        break; 
+    }
+    if(j % 2 == 0){
+    //내 뒤의 코드는 실행하지s 말고 다시 위로 올라가라.
+     continue; 
+    }
+document.write(j + "<br>");
+}
+    </script>
+</body>
+</html>

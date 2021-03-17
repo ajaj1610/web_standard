@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>내 이름은 <span id="name"></span>입니다.</h1>
+
+    <script>
+      //자바 스크립트 변수: date type과 무관하게 var 사용해서 선언.
+      var txt = prompt("당신의 이름은?", "조아라");
+     // alert("txt : " + txt);
+     // alert("typeof(txt): " + typeof(txt));
+      
+      /*function plus(x){
+        y = x + 5; 
+        return y; 
+      }
+      alert(plus(10)); // alert("15"); */
+      
+    document.getElementById('name').innerHTML = txt; 
+    </script>
+</body>
+</html>

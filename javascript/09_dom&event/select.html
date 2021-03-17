@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM을 활용한 element 선택 방법</h1>
+    
+    <ul>
+        <li>getElementById: id로 선택 - 개별 element 선택</li>
+        <li>getElementsByTagName: 같은 tag elements를 배열로 반환</li>
+        <li>getElementsByClassName: 같은 class 이름을 가진 elements를 배열로 반환</li>
+        <li>getElementsByName: 같은 name을 가진 elements를 배열로 반환</li>
+    </ul>
+    
+    <p class="greet">hi!</p>
+    <p class="greet">hello! <span>wow</span></p>
+    <p id="season" name="wow">summer</p>
+    <div id="result" name="wow"></div>
+
+    <h2 class="example">A heading with class="example"</h2>
+    <p class="example">A paragraph with class="example".</p> 
+    
+    <p>Click the button to add a background color to the first element in the document with class="example".</p>
+    
+    <button onclick="myFunction()">Try it</button>
+    
+    <script>
+        var a = document.getElementById("result");
+        console.log(a.tagName);
+        a.innerHTML = "happy day!!!"; 
+        var b = document.getElementById("season");
+        console.log(b.textContent);
+        
+        var c = document.getElementsByTagName("p"); 
+        console.log(c);
+        c[0].innerHTML = c[1].textConcent; 
+
+        var d = document.getElementsByClassName("greet");
+        console.log(typeof d[0].firstChild); 
+        
+        var e = document.getElementsByName("wow");
+
+        var f = document.getElementsByTagName("li");
+        e[0].innerHTML = f[1].textContent; 
+
+        //event 추가 
+
+        f[0].addEventListener("mouseover", changeColor); 
+        f[0].addEventListener("mouseleave", changeColor1);
+
+        function changeColor(){
+            f[0].style.color = "hotpink";
+            //this.style.color = "hotpink";
+        }
+
+        function changeColor1(){
+            this.style.color ="black";
+        }
+
+
+    function myFunction() {
+      document.querySelector(".example").style.backgroundColor = "red";
+    }
+
+    function myFunction1() {
+  var x, i;
+  x = document.querySelectorAll(".example");
+  for (let i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "red";
+  }
+}
+
+    </script>
+</body>
+</html>

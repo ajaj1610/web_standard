@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event: onmouseover</h1>
+
+    <img src="../../images/0out.jpg" alt="" onmouseover="over(0)" onmouseout="out(0)">
+    <img src="../../images/1out.jpg" alt="" onmouseover="over(1)" onmouseout="out(1)">
+    <img src="../../images/2out.jpg" alt="" onmouseover="over(2)" onmouseout="out(2)">
+    <img src="../../images/3out.jpg" alt="" onmouseover="over(3)" onmouseout="out(3)">
+
+    <script>
+        var overImg = [];
+        var outImg = new Array();
+    
+        var path = "../../images/";
+        var extension = ".jpg";
+        for(let i = 0, i <= 4; i++){
+            overImg[i] = path + i + "over" + extension; 
+            outImg[i] = path + i + "out" + extension; 
+        }
+
+        console.log(oveImg);
+        
+        function over(num){
+          document.images[num].src = overImg[num]; 
+
+        }
+        function out(num){
+          document.images[num].src = outImg[num]; 
+          
+        }
+    </script>
+</body>
+</html>

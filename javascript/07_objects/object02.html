@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+   //class - 객체 생성을 위한 틀.
+    function person(name, age){
+        this.name = name; 
+        this.age = age; 
+        this.addr = addr; 
+    }
+
+    class person {
+        constructor(name, age, addr){
+            this.name = name; 
+            this.age = age; 
+            this.addr = addr; 
+        }
+    
+        get name_age(){
+            return this.name + " : " + this.age;    }
+    
+    }
+
+    var p1 = new person("tom", 33, "ny");
+    var p2 = new person("som", 37, "boston");
+    var p3 = new person("pom", 39, "sydney");
+    
+    console.log(p2.age);
+
+    for(var key in p1){
+        document.write("<h3>" + key + " : " + p1[key]);
+    }
+  var myFriends = [p1, p2, p3];
+
+  console.log(myFriends[1].addr);
+
+  for (var i = 0; i < myFriends.length; i++){
+      var friend = myFriends[i];
+      for (var key in friend {
+        document.write("<h3>" + key _ " : " + myFriends[i][key]);
+      }
+      document.write("<hr>");
+  }
+
+    </script>
+</body>
+</html>

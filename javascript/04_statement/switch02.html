@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>오늘은 <span id="yoil"></span>요일 입니다.</h2>
+
+
+    <script>
+        var day = new Date(2021.2,7).getDay();
+        var yoil = document.getElementById("yoil");
+
+        switch(day){
+            case 0: 
+               yoil.innerHTML ="일";
+            case 1: 
+               yoil.innerHTML = "월";
+               break;
+            case 2: 
+               yoil.innerHTML = "화";
+               break; 
+            case 3: 
+               yoil.innerHTML = "수";
+               break;
+            case 4: 
+               yoil.innerHTML = "목";
+               break;
+            case 5: 
+               yoil.innerHTML = "금";
+               break;
+            case 6: 
+               yoil.innerHTML = "토";
+               break; 
+            default: 
+               yoil.innerHTML = "우리";
+        }
+
+    </script>
+</body>
+</html>

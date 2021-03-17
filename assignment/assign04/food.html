@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: georgia;
+            padding: 5px;
+            margin: 0px;
+            font-size: 20px;
+        }
+
+        header {
+            height: 50px;
+            text-align: center;
+            font-size: 45px;
+            font-family: georgia;
+            word-spacing: 10px;
+            word-break: break-all;
+            font-weight: 200;
+
+
+        }
+
+
+
+        nav {
+            height: 10%;
+            text-align: center;
+            font-size: 18px;
+            word-spacing: 3rem;
+        }
+
+        nav li {
+            list-style-type: none;
+            font size: 20px;
+
+            font-family: verdana;
+        }
+
+        aside {
+            width: 17%;
+            float: left;
+            margin: 20px;
+        }
+
+        .gallery {
+            object-fit: fill;
+            text-align: center;
+            object-position: center;
+            margin: 10px;
+        }
+
+        article {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            object-position: center;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        .text li {
+            list-style-type: circle;
+        }
+
+        .text {
+            margin: 25px;
+            padding: 15px;
+            list-style-type: none;
+            width: 340px;
+            border-right: 10px solid black;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            background-color: #faf8f5;
+        }
+
+        .menu {
+            color: black;
+            font-size: 25px;
+            display: inline-block;
+            padding: 10px;
+            border-right: 6px solid black;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom: 6px solid black;
+            margin: 30px;
+            background-color: #faf8f5;
+
+        }
+
+        main a:link {
+            border-bottom: 3px dashed green;
+        }
+
+        main a:visited {
+            border-bottom: 3px dashed green;
+        }
+
+        a {
+            text-decoration: inherit;
+            color: inherit;
+        }
+
+        aside {
+            font-family: verdana;
+        }
+
+        h1 {
+            font-family: verdana;
+            font-size: 30px;
+        }
+
+        .footer {
+            border-top: 1px solid gray;
+            height: 50px;
+            font-size: 15px;
+            text-align: center;
+        }
+        span {
+            background-color:yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>a food blog!</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <div class="menu">
+                <li><a href="04.html">Recipes</a></li>
+            </div>
+            <div class="menu">
+                <li><a href="food.html">Food</a></li>
+            </div>
+            <div class="menu">
+                <li><a href="travel.html">Travel</a></li>
+            </div>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+        <aside>
+            <div class="gallery">
+                <div><img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=653&q=80" width="180px" height="220px" alt=""></div>
+                <div><a href="avo.html"><strong>Friday find:<br>Avocado and Egg Toast!</strong></a></div>
+                <br>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" width="180px" height="220px" alt="">
+                </div>
+                <div class="link"><a href="greek.html"><strong>Saturday find:<br>Greek Salad!</strong></a></div>
+            </div>
+
+        </aside>
+
+        <article>
+            <div class="article">
+
+                <h1>Easy Chicken Kiev</h1>
+                <img src="https://img.taste.com.au/uZi7-9bC/taste/2016/11/pesto-chicken-kiev-107604-1.jpeg" width="800px" height="600px">
+            </div>
+            <div class="text">
+                <br>
+                <ul>
+                    <li>Heat oven to <span>200C/180C fan/gas 6.</span> Whizz together the 2 peeled garlic cloves, parsley and 1 tsp olive oil in a food processor. Add the breadcrumbs and seasoning before pulsing briefly to mix. Tip onto a plate.</li><br>
+                    <li>Cut a slit (roughly thumb-length) in the side of each chicken breast, at the plump end. <span>Spoon ¼ of the soft cheese </span>into each hole and press the edges together to seal. Rub 2 tsp oil over all the chicken breasts before pressing the herby crumbs onto them.</li><br>
+                    <li>Place the coated chicken in a shallow roasting tin. Scatter round the remaining unpeeled garlic cloves and drizzle with the rest of the oil. Bake for <span>20-25 mins </span>until the chicken is cooked and crumbs crisp and golden. Squeeze out the soft, roasted garlic from the skins and serve with the chicken. </li>
+                </ul>
+            </div>
+
+        </article>
+    </main>
+    <footer>
+        <div class="footer">
+            <br>
+            Copyright &copy; 2021. All rights reserved
+        </div>
+    </footer>
+</body></html>

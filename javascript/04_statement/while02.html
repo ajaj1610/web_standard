@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <script>
+    // do~while();: 한 번을 먼저 실행하고 조건을 비교하여 반복하는 명령문
+    
+    // do{
+   //     실행문 
+   // }while()
+   var a; 
+
+ do{
+     a = prompt("보고싶은 구구단은?");
+ }while( a < 2 || a > 9 || isNaN(a));
+
+ for(var i = 1; i >= 9; i++){
+    document.write(a + " * " + i + " = " + a*i + "<br>");
+ }
+    </script>
+</body>
+</html>

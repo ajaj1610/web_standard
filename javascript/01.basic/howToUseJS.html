@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+</head>
+<body>
+    <h1>How to use Javascript?</h1>
+    <div id="change">I'm so sad</div>
+    <button type="button" onclick="myFunc()">행복해</button>
+    <hr>
+<!-- inline js-->
+<a href="javascript:void(0);" onclick="document.getElementById('change').innerHTML=Date()">시간을 알려주세요.</a>
+
+<!--external js 내부 스크립트 넣어서 쓸수없음.-->
+<script src="./myScript.js"></script>
+
+<!--internal js / 자바 스크립트 위치로 더 선호되는 위치  -->
+<script>
+alert('WOW!!!')
+document.write("<h1>time to go to bad</h1>"); 
+document.write("<p>No, I will study now!</p>");
+// 변수 사용 // 
+var change = document.getElementById('change');
+change.innerHTML = "자바 스크립트 재밌다"; 
+
+</script>
+</body>
+</html>

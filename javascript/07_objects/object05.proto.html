@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //object constructor 
+    
+    function person(name, age, gender){
+        this.name = name; 
+        this.age = age; 
+        this.gender = gender; 
+    }
+
+    var p1 = new person("tom", 33, "m");
+    var p2 = new person("jane", 39, "f");
+
+    p2.height = 185; 
+
+    console.log(p2);
+
+
+
+    //object에 속성 추가.
+
+    person.prototype.height = 172;
+
+    var p3 = new person("sam", 23, "f");
+    
+    person.prop2 = {height: 172};
+    console.log(p3);
+
+    //object에 함수 추가
+
+    person.prototype.lunch = function(){
+        if(this.gender == "m"){
+            console.log("굶어라");
+        }else{
+            console.log("맛난거 드셈");
+        }
+    }  p2.lunch();
+    </script>
+
+
+</body>
+</html>

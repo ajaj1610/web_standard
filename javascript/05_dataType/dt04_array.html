@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>for in, for of</h1>
+    <script>
+    var a = ["kim", "lee", "park"]; 
+
+    //인덱스를 이용하는 for
+    for(var i= 0; i < a.length; i++){
+         document.write("<p>"+a[i]+"</p>");
+    }
+    
+    document.write("<hr>");
+
+// array의 요소를 순서대로 뽑아내는 for //인덱스요소
+
+ for(var x in a){
+     document.write("<p>" + x + ":" +a[x]+"</p>");
+ }
+document.write("<hr>");
+
+// 바로 값이 나옴. - iterable 값만 쓸수있음(열거식개체: array, string, map, nodelists 등등);
+ for(var x of a){
+    document.write("<p>" + x +"</p>");
+ }
+ document.write("<hr>");
+var b = {
+    fname: "Cruise", lname: "Tom", age: 37 
+}; 
+
+//object 출력 = for in
+    for(var key in b){
+        document.write("<p>" + x + " : " + b[key] + "</b>");
+    }
+
+</script>
+</body>
+</html>

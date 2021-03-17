@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: georgia;
+            padding: 5px;
+            margin: 0px;
+            font-size: 20px;
+        }
+
+        header {
+            height: 50px;
+            text-align: center;
+            font-size: 45px;
+            font-family: georgia;
+            word-spacing: 10px;
+            word-break: break-all;
+            font-weight: 200;
+
+
+        }
+
+        header,
+        nav {
+            width: 100%;
+        }
+
+        nav {
+            height: 10%;
+            text-align: center;
+            font-size: 18px;
+            word-spacing: 3rem;
+        }
+
+        nav li {
+            list-style-type: none;
+            font size: 20px;
+
+            font-family: verdana;
+        }
+
+        aside {
+            width: 17%;
+            float: left;
+            margin: 20px;
+        }
+
+        .gallery {
+            object-fit: fill;
+            text-align: center;
+            object-position: center;
+            margin: 10px;
+        }
+
+        article {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            object-position: center;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        .text li {
+            list-style-type: circle;
+        }
+
+        .text {
+            margin: 25px;
+            padding: 15px;
+            list-style-type: none;
+            width: 340px;
+            border-right: 10px solid black;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            background-color: #faf8f5;
+        }
+
+        .menu {
+            color: black;
+            font-size: 25px;
+            display: inline-block;
+            padding: 10px;
+            border-right: 6px solid black;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom: 6px solid black;
+            margin: 30px;
+            background-color: #faf8f5;
+
+        }
+
+        main a:link {
+            border-bottom: 3px dashed green;
+        }
+
+        main a:visited {
+            border-bottom: 3px dashed green;
+        }
+
+        a {
+            text-decoration: inherit;
+            color: inherit;
+        }
+
+        aside {
+            font-family: verdana;
+        }
+
+        h1 {
+            font-family: verdana;
+            font-size: 30px;
+        }
+
+        .footer {
+            border-top: 1px solid gray;
+            height: 50px;
+            font-size: 15px;
+            text-align: center;
+        }
+        span {
+            background-color:yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>a food blog!</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <div class="menu">
+                <li><a href="04.html">Recipes</a></li>
+            </div>
+            <div class="menu">
+                <li><a href="food.html">Food</a></li>
+            </div>
+            <div class="menu">
+                <li><a href="travel.html">Travel</a></li>
+            </div>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+        <aside>
+            <div class="gallery">
+                <div><img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=653&q=80" width="180px" height="220px" alt=""></div>
+                <div><a href="avo.html"><strong>Friday find:<br>Avocado and Egg Toast!</strong></a></div>
+                <br>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" width="180px" height="220px" alt="">
+                </div>
+                <div class="link"><a href="greek.html"><strong>Saturday find:<br>Greek Salad!</strong></a></div>
+            </div>
+
+        </aside>
+
+        <article>
+            <div class="article">
+
+                <h1>Easy Avocado Egg Toast</h1>
+                <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2015/12/11/0/FNK_All-the-Avocado-Toast_s4x3.jpg.rend.hgtvcom.826.620.suffix/1450059496131.jpeg" width="800px" height="560px">
+            </div>
+            <div class="text">
+                <br>
+                <ul>
+                    <li>Mash the avocado with a fork in a shallow bowl until chunky. Season with fine salt and black pepper.</li><br>
+                    <li><span>Toast the bread until browned and crisp.</span>span> Lightly rub 1 side of each slice with the cut side of the garlic until fragrant; discard the garlic. Lightly brush the toasts with oil, and season with fine salt and pepper. Divide the mashed avocado evenly among the toasts, and<span>top with more flaky sea salt</span>, more black pepper and red pepper flakes if using.</li>
+                </ul>
+            </div>
+
+        </article>
+    </main>
+    <footer>
+        <div class="footer">
+            <br>
+            Copyright &copy; 2021. All rights reserved
+        </div>
+    </footer>
+</body></html>

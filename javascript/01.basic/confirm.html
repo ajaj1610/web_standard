@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>confirm 함수</h1>
+    
+    <script>
+        alert("수업 만족도 조사"); 
+        //prompt(): 입력받은 값을 문자열로 반환하는 함수.
+        //confirm():  true or false를 결과값으로 받는 함수.
+        
+        var answer = confirm("수업이 즐거우시죠?");
+        alert("answer의 데이터 타입: " + typeof(answer));
+        if(answer == true){
+            document.write("<h1>네, 수업이 아주 즐겁고 너무 공부하고 싶어요</h1>"); 
+        
+        }else{
+            document.write("<h1>수업은 엄청 재밌는데 제가 좀 게을러서...</h1>"); 
+        }
+    
+    </script>
+</body>
+</html>

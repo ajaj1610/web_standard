@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>중첩 if</h1>
+    <form action="" method="POST">
+        <label for="id">ID: </labe><input type="text name="id" id="id">      <labe for="password">PW: </label><input type="text name="password" id="password">
+        <input type="button" onclick="submit()" value="로그인">
+
+
+    </form>
+</head>
+<body>
+    
+    <script>
+        function submit(){
+        var id = document.getElementById("id").value;
+        var password = document.getElementById(
+            "password").value; 
+          //form validation//
+        if(id == "" || id == null){
+            alert("값을 입력해라")
+            return false; 
+            }
+        if(id == "blue"){    
+            if(password == "1234"){
+            alert("로그인 성공!");
+         }else{
+             alert("비밀번호 오류");    
+            }
+        }else{
+            alert("id 오류");
+        } 
+     }   
+        
+
+    </script>
+</body>
+</html>

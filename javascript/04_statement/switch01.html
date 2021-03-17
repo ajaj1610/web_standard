@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   /*    body{background-color: cadetblue;} */
+    </style>
+</head>
+<body>
+
+
+
+    <script>
+    // switch: 판별식이나 값에 따라 정해진 일을 수행
+    switch(판별식,값){
+     /*   case x:
+            실행할 코드 
+            break;
+        case y: 
+            실행할 코드 
+            break; 
+        default: 
+            실행할 코드         
+    } */
+     
+    var select = parseInt(prompt("1~7사이의 숫자를 입력하세요 >>>"));
+    var color; 
+
+    switch(select){
+        case 1: 
+            color = "red"; 
+            break;
+        case 2: 
+            color ="orange";
+            break;
+        case 3: 
+            color = "yellow";
+            break;
+        case 4: 
+            color: "green";
+            break;
+        case 5:
+            color: "blue";
+            break;   
+        case 6:
+            color: "navy";
+            break;  
+        default:
+            color = "violet";    
+    }
+    
+    document.body.style.backgroundColor = color;
+    
+    
+    </script>
+</body>
+</html>

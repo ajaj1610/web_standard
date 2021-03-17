@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var str ="우리는 친구 만나면 반가운 친구";
+
+        //split: 특정 기호 (delimeter, separator)를 기준으로 문자열 나누어 array로 반환. 
+
+        var words = str.split(" ");
+        console.log(words);
+
+        for(var index in worlds){
+            document.write("<h3>"+index + ":" words[index] + "배고파");
+        }
+
+        //charAt
+        console.log(str.charAt(4));
+        //indexOf
+        console.log(str.indexOf("친"));
+        //concat 
+        var str2 = "였다. 이젠 웬수";
+        console.log(str.concat(str2));
+
+        //includes
+
+        var sentence = " the quick brown fox jumped over the lazy dog.";
+
+        var word = "fox";
+
+        document.write('the world "${word')" ${sentence.includes(word)? 'is' : 'is not'} in the sentence'); 
+
+        //// 
+
+        //match: regex와 매칭되는 어구 반환
+
+        var regax = /[A-Z]/g; 
+        var find = sentence.match(regex); 
+        console.log(find);
+
+
+        //search: regex와 매칭되는 최초 인덱스 반환.
+        //숫자, 영문자도 아니고 공백도 아닌 문자.
+        var regex2 = /[^\w\s]/g;
+        console.log(sentence.search(regex2)); 
+    //  ===> var regex3 = /]^a-zA-Z0-9\s]; 
+    console.log(sentence.search(regex3)); //44: .의 인덱스값
+    console.log(sentence.length); //45
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{margin: 10px; padding: 10px; border: 1px solid green; display: block;}
+        div{margin: 10px; font-size: 20px; }
+        span{border: 1px solid blue; padding: 20px; display:inline-block; }
+    </style>
+</head>
+<body>
+  <h1>초간단 건강 측정기</h1> 
+  <h3>체중: <input type="text" id="weight"></h3>
+  <h3>신장: <input type="text" id="height"></h3>
+  <h3>이름: <input type="text" id="name1"></h3>
+
+  <button type="button" onclick="check()">건강 측정</button>
+  <hr> 
+  <div><span id="name2"></span>님은<span id="result"></span>입니다.</div>
+  
+  <script>
+     function check(){
+        var weight = parseInt(document.getElementById("weight").value); 
+        var height = parseInt(document.getElementById("height").value); 
+        var name1 = document.getElementById("name1").value; 
+        var name2 = document.getElementById("name2");
+        var result = document.getElementById("result");
+
+        var normal = (height - 100) * 0.9;
+        var test_result = weight  >= normal - 5 && weight <= normal + 5; 
+        name2.innerHTML = name1;
+        if(test_result){
+            result.innerHTML = "적정 체중";
+        }else{
+            result.innerHTML = "체중 관리가 필요";
+        }
+    }
+    
+
+  </script>
+</body>
+</html> 

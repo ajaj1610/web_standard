@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 30px;
+        }
+
+        h1 {
+            font-size: 4em;
+            font-family: chiller, sans-serif;
+        }
+
+        h2 {
+            font-size: 1.874em;
+        }
+
+        p {
+            font-size: 20px;
+            border: 1px solid black;
+            outline: dashed green;
+            outline-offset: 5px;
+            margin: 20px;
+            padding 10px;
+            font-family: 휴먼매직체, sans-serif;
+        }
+        p.italic { font-style: italic;}
+        p.oblique {
+            font-style: oblique;
+        }
+        p.small {
+            font-variant: small-caps;
+        }
+        p.bolder {
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Today is Tuesday.</h1>
+    <h2>Today is the day to drink a cup of coffee.</h2>
+    <p>font-family는 클라이언트 컴퓨터에 저장된 폰트만 제대로 출력된다. </p>
+    <p class="intalic">italic</p>
+        <p class="oblique">italic</p>
+        <p class="small">This character is small caps.</p>
+        <p class="bolder">bolder</p>
+        <h1>가변 폰트</h1>
+        <p>viewport는 브라우저 윈도우 크기. <br>
+        1vw는 viewport 넓이(width)의 1%. 즉 뷰포트가 50cm라면 5vw는 0.5cm.</p>
+        <h3 style="font-size:5vw;">Responsive Text by viewport width</h3>
+        <h3 style="font-size:5vh;">Responsive Text by viewort height</h3>
+    <h3 style="font-size:5vmin;">Responsive Text by the minumum size(height or width</h3>
+</body></html>

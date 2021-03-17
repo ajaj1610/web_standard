@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>location</h1>
+    <button type="button" onclick="gogo('http://www.daum.net')">Daum</button>
+    
+    <script>
+        function gogo(url){
+            //location.href = url; 
+            location.replace(url) //뒤로가기 없음 - 
+;        }
+
+
+document.write("<hr>");
+        document.write(location.host);
+        document.write("<hr>");
+        document.write(location.hostname);
+        document.write("<hr>");
+        document.write(location.pathname);
+        document.write("<hr>");
+        document.write(location.hash);
+        document.write("<hr>");
+        document.write(location.origin);
+        document.write("<hr>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        ul li {
+            border: 1px solid #ddd;
+            width: 100px;
+            padding: 5px;
+            margin: 3px;
+            text-align: center;
+        }
+
+        ul.block li {
+            display: inline-block;
+        }
+
+        ul.inline {
+            list-style-type: none;
+        }
+
+        /*#a:hover {display: none;}
+        
+        #b:hover{
+            visibility: hidden;
+        }*/
+        span {
+            margin: 20px;
+            border 1px;
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            display: block;
+        }
+
+        #a: hover {
+            background-color: rosybrown;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>Block tag &amp; Inline tag</h3>
+    <button type="button" onclick="aon()" style="width: 100px; height: 40px">a_On</button>
+    <button type="button" onclick="aoff()" style="width: 100px; height: 40px">a_Off</button>
+    <button type="button" onclick="bon()" style="width: 100px; height: 40px">b_On</button>
+    <button type="button" onclick="boff()" style="width: 100px; height: 40px">b_Off</button>
+    <p>block tag</p>
+    <ul class="block">
+        <li>h1~h6</li>
+        <li>div</li>
+        <li>p</li>
+        <li id="a">form</li>
+        <li>header</li>
+        <li id="b">section</li>
+        <li>li</li>
+    </ul>
+    <hr>
+    <p>inline tag</p>
+    <ul class="inline">
+        <li>a</li>
+        <li>img</li>
+        <li>span</li>
+        <li>input 등 form 요소</li>
+    </ul>
+    <script>
+        function aoff() {
+            document.getElementById("a").style.display = "none";
+        }
+
+        function aon() {
+            document.getElementById("a").style.display = "inline-block";
+        }
+
+        function boff() {
+            document.getElementById("b").style.visibility = "hidden";
+        }
+
+        function bon() {
+            document.getElementById("b").style.visibility = "visible";
+        }
+    </script>
+
+    <span>안녕하세요 반갑습니다. 하하하하하하하하하하 </span>
+</body></html>
+
+
+
+
+
+
+

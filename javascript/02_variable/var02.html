@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=h2d">
+    <title>Document</title>
+    <style>
+        h2{background-color: cadetblue; color: aliceblue; line-height: 2.5; padding: 12px 18px; border: 10px inset #333; border-radius: 8px;}
+        span{padding: 12px 18px; border: 2px inset red; border-radius: 8px; margin: 10px;}
+    </style>
+</head>
+<body>
+<h2>자바 스크립트로 두 수를 입력 받아(prompt 사용) 합계를 구하고 아래 빈 칸을 채우시오</h2>
+<p>입력한 두 수 <span id="num1"></span>과 <span id="num2"></span>의 합은 <span id="sum"></span>입니다.</p>
+
+<script>
+    var num1 = parseInt(prompt("숫자 하나를 입력하세요>>>")); 
+    var num2 = parseInt(prompt("숫자 하나를 입력하세요>>>")); 
+    var sp1 = document.getElementById("num1");
+    var sp2 = document.getElementById("num2"); 
+    var sum = document.getElementById("sum");
+    
+    sp1.innerHTML = num1; 
+    sp2.innerHTML = num2; 
+    sum.innerHTML = num1 + num2; 
+</script>
+</body>
+</html>

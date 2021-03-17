@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            width: 300px;
+            height: 100px;
+            font-size: 20px;
+            margin: auto;
+            border: 1px solid black;
+            text-align: center;
+            background-color: antiquewhite;
+        }
+
+        #color_name {
+            font-size: 50px;
+            font-weight: bolder;
+            font-variant: small-caps;
+            line-height: 90px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" width="500" height="100" align="center">
+        <tr>
+            <td bgcolor="red" onmouseover="changeColor(0)"></td>
+            <td bgcolor="orange" onmouseover="changeColor(1)"></td>
+            <td bgcolor="yellow" onmouseover="changeColor(2)"></td>
+            <td bgcolor="green" onmouseover="changeColor(3)"></td>
+            <td bgcolor="blue" onmouseover="changeColor(4)"></td>
+            <td bgcolor="navy" onmouseover="changeColor(5)"></td>
+            <td bgcolor="violet" onmouseover="changeColor(6)"></td>
+        </tr>
+    </table>
+    <p></p>
+    <div><span id="color_name"></span></div>
+<script>
+
+
+
+    var color = ["red", "orange", "yellow", "green", "navy", "violet" ];
+
+    function changeColor(num){
+         document.body.style.backgroundColor = color[num]; 
+         document.getElementById("color_name").innerHTML = color[num];
+    }
+
+    
+</script>
+
+</body>
+</html>

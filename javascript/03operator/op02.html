@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //변수 a와 b를 선언하고 각각 35와, 20으로초기화 
+
+    var a = 35, b = 20; 
+
+      //곱셈: a * b 가 console에 출력 
+
+     console.log("곱셈: " + a*b); 
+     //a가 b보다 큰지 console에 출력 
+      
+        //비교의 결과값은 booleanㄴ
+     console.log("비교: " + ( a >= b));
+     //나머지는 : % 
+     console.log("나머지: " + (a % b)); 
+      //a가 5와 7의 공배수인가? 그리고(and) = && 
+     //true && true -> true
+     // true && false -> false
+     // false && false -> false
+     // false && true -> false
+
+    
+     console.log("a가 5와 7의 공배수인가?" + ((a % 5 ==0) && (a % 7 ==0))); 
+     console.log("a가 5와 7의 공배수인가?" + ((b % 5 ==0) && (b % 7 ==0))); 
+
+    //a가 4의 배수이거나 7의 배수인가? 이거나(or)  = ||
+     //true || true -> true
+     // true || false -> true
+     // false || false -> false
+     // false || true -> true
+
+    console.log("a가 4의 배수이거나 7의 배수인가?" + ((a % 4 ==0) || (a % 7 == 0)));
+
+    // a++ -> a = a + 1; 
+    // a-- -> a = a - 1; 
+
+    a++; 
+    console.log(a); 
+    a--; 
+    console.log(a);
+    console.log(a++); // ++, --가 변수 뒤에 있으면 연산 순위가 가장 늦음.
+    console.log(a); //36 
+    //console.log(++a); 
+    console.log(a--); //36
+    console.log(a); //
+    // ++, -- 를 변수 앞에 쓰면 먼저 연산하고 다른 연산을 한다. 
+    console.log(++a); //36
+    console.log(--a); //35
+
+    var c = b + a--
+    // c = 55, b = 20, a  = 34
+
+    </script>
+</body>
+</html>

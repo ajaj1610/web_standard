@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 100px;
+            color: white;
+            background-color: teal;
+            font-size: 80px; 
+            font-family:fantasy; 
+            text-align: center;
+            margin-top: 30px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Create Element</h1>
+    <button onclick="createHappy()">행복을 위해 필요한 것은?</button>
+    <div id="happy">사랑</div>
+
+    <script>
+        function createHappy(){
+            var div = document.createElement("div"); //<div></div> 만듦 
+            var node = document.createTextNode("money");//"money" 만듦 
+            div.append(node); //<div>money</div>
+            document.body.appendChild(div); 
+        }
+    </script>
+</body>
+</html>
